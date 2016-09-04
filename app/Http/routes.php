@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'galleryController@index');
+
+Route::get('/create','galleryController@create');
+
+Route::post('/post','galleryController@post');
+
