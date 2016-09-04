@@ -11,8 +11,8 @@ class galleryController extends Controller
 {
     public function index()
     {
-
-        return view('index');
+        $imageCollect = Image::all();
+        return view('index',compact('imageCollect'));
 
     }
     public function create()
@@ -37,8 +37,9 @@ class galleryController extends Controller
             'path'=>$imageName,
         ]);
 
-        $request->file('image')->move(base_path().'/public/img/'.$imageName);
-        return view('index');
+        $request->file('image')->move(base_path().'/public/img/',$imageName);
+
+        return redirect('/');
     }
 }
 
