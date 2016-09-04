@@ -7,8 +7,9 @@
     <div class="row">
         @foreach($images as $image)
             <div class="col col-md-4">
-                {{$image->title}}
+                <h2 class="text-center">{{$image->title}}</h2>
                 <img src="{{URL::asset('/img/'.$image->path)}}" alt="">
+                <div class="text-center">{{$image->description}}</div>
             </div>
         @endforeach
     </div>
