@@ -1,0 +1,45 @@
+/*
+styles
+*/
+
+.background-img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image{
+
+    width: 200px;
+    height: 200px;
+}
+.image img{
+    z-index: 2;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+
+}
+
+.image-box{
+    position: relative;
+    top: -200px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    rotation: 10deg;
+    box-shadow: 0 0 5px #000;
+    transform: rotate(10deg);
+
+
+}
+.image ,.image-box{
+
+    margin-right: auto;
+    margin-left: auto;
+
+}
