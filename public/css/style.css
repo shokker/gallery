@@ -2,6 +2,9 @@
 styles
 */
 
+body{
+    background-color: #2e3436;
+}
 .background-img {
     position: absolute;
     top: 0px;
@@ -10,6 +13,9 @@ styles
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+
+    opacity: 0.3;
 }
 .image{
 
